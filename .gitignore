@@ -1,1 +1,4 @@
 node_modules/
+.idea/es6-katas.iml
+.idea/workspace.xml
+/.idea/
