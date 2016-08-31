@@ -17,11 +17,12 @@ describe('destructuring objects', () => {
         });
 
         it('object and array', () => {
-            const {z:[x]} = {z: [23, 42]};
+            const {z:[,x]} = {z: [23, 42]};
             assert.equal(x, 42);
         });
+
         it('array and object', () => {
-            const [,{lang}] = [null, [{env: 'browser', lang: 'ES6'}]];
+            const [,[{lang}]] = [null, [{env: 'browser', lang: 'ES6'}]];
             assert.equal(lang, 'ES6');
         });
     });
