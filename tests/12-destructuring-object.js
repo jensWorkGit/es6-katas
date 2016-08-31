@@ -16,14 +16,17 @@ describe('destructuring objects', () => {
       const {magic: {second}} = {magic};
       assert.equal(second, 42);
     });
+
     it('object and array', () => {
       const {z:[,x]} = {z: [23, 42]};
       assert.equal(x, 42);
     });
+
     it('array and object', () => {
       const [,[{lang}]] = [null, [{env: 'browser', lang: 'ES6'}]];
       assert.equal(lang, 'ES6');
     });
+
   });
 
   describe('interesting', () => {
