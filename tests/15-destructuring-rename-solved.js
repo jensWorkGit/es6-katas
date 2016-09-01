@@ -1,7 +1,7 @@
 // 15: destructuring - assign
 // To do: make all tests pass, leave the assert lines unchanged!
 
-describe('assign object property values to new variables while destructuring', () => {
+describe.only('assign object property values to new variables while destructuring', () => {
 
   describe('for simple objects', function() {
     it('use a colon after the property name, like so `propertyName: newName`', () => {
